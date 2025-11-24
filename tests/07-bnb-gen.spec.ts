@@ -6,8 +6,6 @@ import { BnbGenPage, RoomInfo, UserInfo } from '../pages/03-bnb-gen';
 
 test.describe('test the bnb gen app', ()=>{
 
-    //happy path test
-    
 
         //data setup
         let bnbGenPage: BnbGenPage;
@@ -35,6 +33,8 @@ test.describe('test the bnb gen app', ()=>{
             bnbGenPage = new BnbGenPage(page);
             await page.goto(URLs.homePage,{waitUntil: 'load'});
         });
+
+        //happy path test
 
         test('Should complete bnb gen flow successfully',async({page})=>{
 
