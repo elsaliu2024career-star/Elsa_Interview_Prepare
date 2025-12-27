@@ -23,7 +23,10 @@ export class Ecommerce {
     this.page = page;
   }
 
-  async logginWithCredential(userCredential: UserCredential) {
+  async logginWithCredential(userCredential: UserCredential) {await this.page.locator('body').click();
+  await this.page.locator('body').click();
+  await this.page.locator('body').click();
+  await this.page.locator('body').click();
     await this.page
       .getByRole("textbox", { name: "Email*" })
       .fill(userCredential.email);
